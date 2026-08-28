@@ -1,13 +1,15 @@
 /**
  * Lux Forum Theme
- * Tailwind CSS 4
+ * No utility engine: tokens and rules, read straight by the browser
  */
 
-@import "tailwindcss";
+/* The library's sheets are imported from the LAYOUT, not here: a bare package
+   specifier in a plain @import does not resolve in this pipeline, and the
+   failure is silent — the whole file is dropped, so the tokens below never
+   reach the document and every link renders browser-default blue. */
 
-@custom-variant dark (&:is(.dark *));
 
-@theme inline {
+:root {
   --font-sans: var(--font-inter), system-ui, sans-serif;
   --font-mono: ui-monospace, monospace;
   --radius: 0.5rem;
@@ -73,7 +75,7 @@
   --ring: 0 0% 36%;
 }
 
-@layer base {
+
   * {
     border-color: hsl(var(--border));
   }
@@ -95,4 +97,15 @@
   .dark ::selection {
     background: rgba(255, 255, 255, 0.20);
   }
+
+
+/* The body's ground. Stated here rather than as classes on <body>, which sits
+   outside the provider and so reads none of them. */
+body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 100vh;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  -webkit-font-smoothing: antialiased;
 }

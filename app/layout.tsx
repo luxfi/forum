@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
+import { Hanzo } from '@hanzo/ui'
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
+import '@hanzo/ui/theme.css';
+import '@hanzo/ui/styles.css';
 import './global.css';
 
 const inter = Inter({
@@ -32,7 +35,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className={inter.variable}>
-      <body className="min-h-screen bg-background text-foreground antialiased">
+      <body>
+        <Hanzo>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -41,6 +45,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        </Hanzo>
       </body>
     </html>
   );
