@@ -9,23 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fontsource/inter": "^5.3.0",
-    "@hanzo/ui": "8.27.0",
-    "@luxfi/logo": "1.0.10",
-    "clsx": "^2.1.1",
-    "lucide-react": "^1.33.0",
-    "next": "16.3.3",
-    "next-themes": "^0.4.6",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "react-native-web": "^0.21.2",
-    "tailwind-merge": "^3.6.0"
+    "@fontsource/inter": "catalog:",
+    "@hanzo/ui": "catalog:",
+    "@luxfi/logo": "catalog:",
+    "clsx": "catalog:",
+    "lucide-react": "catalog:",
+    "next": "catalog:",
+    "next-themes": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-native-web": "catalog:",
+    "tailwind-merge": "catalog:"
   },
   "devDependencies": {
-    "@types/node": "26.4.0",
-    "@types/react": "19.2.18",
-    "@types/react-dom": "19.2.5",
-    "typescript": "7.0.2"
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "typescript": "catalog:"
   },
   "packageManager": "pnpm@11.24.0"
 }
