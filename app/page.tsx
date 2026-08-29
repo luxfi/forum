@@ -1,21 +1,7 @@
 import Link from 'next/link';
 import { Box, css } from '@hanzo/ui'
-import {
-  MessageSquare,
-  Lightbulb,
-  HelpCircle,
-  Megaphone,
-  Code2,
-  Rocket,
-  ArrowRight,
-  ExternalLink,
-  Github,
-  Twitter,
-  Users,
-  Zap,
-  BookOpen,
-  Shield,
-} from 'lucide-react';
+import { MessageSquare, Lightbulb, HelpCircle, Megaphone, Code2, Rocket, ArrowRight, ExternalLink, Users, Zap, BookOpen, Shield } from 'lucide-react'
+import { Github, Twitter } from '@hanzo/ui/brands';
 import { Logo } from '@/components/logo';
 import { ThemeToggle } from '@/components/theme-toggle';
 
